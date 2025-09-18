@@ -1,8 +1,8 @@
 // Test setup file for Jest
-import dotenv from 'dotenv';
+import dotenv from "dotenv";
 
 // Load test environment variables
-dotenv.config({ path: '.env.test' });
+dotenv.config({ path: ".env.test" });
 
 // Mock console methods for cleaner test output
 global.console = {

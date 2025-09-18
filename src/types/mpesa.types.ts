@@ -3,7 +3,7 @@ export interface MpesaConfig {
   consumerSecret: string;
   businessShortCode: string;
   passkey: string;
-  environment: 'sandbox' | 'production';
+  environment: "sandbox" | "production";
   callbackBaseUrl: string;
 }
 
@@ -11,7 +11,7 @@ export interface STKPushRequest {
   BusinessShortCode: string;
   Password: string;
   Timestamp: string;
-  TransactionType: 'CustomerPayBillOnline' | 'CustomerBuyGoodsOnline';
+  TransactionType: "CustomerPayBillOnline" | "CustomerBuyGoodsOnline";
   Amount: number;
   PartyA: string; // Phone number
   PartyB: string; // Business short code
@@ -48,7 +48,7 @@ export interface STKPushCallback {
 
 export interface TransactionStatus {
   transactionId: string;
-  status: 'pending' | 'success' | 'failed' | 'cancelled';
+  status: "pending" | "success" | "failed" | "cancelled";
   amount: number;
   phoneNumber: string;
   mpesaReceiptNumber?: string;
